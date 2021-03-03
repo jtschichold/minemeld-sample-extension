@@ -1,0 +1,16 @@
+{
+    "version": "0.5",
+    "name": "minemeld-output",
+    "author": "Palo Alto Networks",
+    "author_email": "lmori@paloaltonetworks.com",
+    "description": "MineMeld Sample Extension",
+    "entry_points": {
+        "minemeld_nodes": {
+            "sample_extension.Output": "sample_extension.node:Output"
+        },
+        "minemeld_prototypes": {
+            "sample_extension.prototypes": "sample_extension:prototypes"
+        }
+    },
+    "manifest_version": 0
+}

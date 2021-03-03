@@ -1,0 +1,24 @@
+nodes:
+  o365_worldwide_any:
+    output: true
+    prototype: o365-api.worldwide-any
+  o365_worldwide_ips:
+    output: false
+    prototype: sample_extension.output
+    inputs:
+      - o365_worldwide_any
+    config:
+      infilters:
+          - name: accept IP
+            conditions:
+              - type == 'IPv4'
+            actions:
+              - accept
+          - name: accept IP
+            conditions:
+              - type == 'IPv6'
+            actions:
+              - accept
+          - name: drop all
+            actions:
+              - drop      

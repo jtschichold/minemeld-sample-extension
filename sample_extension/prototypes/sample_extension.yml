@@ -1,0 +1,19 @@
+url: https://github.com/jtschichold/minemeld-sample-extension
+description: >
+  Sample Extension for MineMeld
+
+prototypes:
+  output:
+    author: Luigi Mori
+    class: sample_extension.Output
+    development_status: EXPERIMENTAL
+    node_type: output
+    indicator_types:
+      - IPv6
+      - URL
+      - IPv4
+    tags:
+      - extension
+    description: >
+      Sample output node
+    config: {}
